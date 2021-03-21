@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "lib": ["esnext", "dom"],
+    "paths": {
+      "@libs/*": ["../../libs/*"],
+      "@client/store": ["./store"]
+    }
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true
+  }
+}

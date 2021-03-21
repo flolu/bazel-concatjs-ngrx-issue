@@ -1,0 +1,9 @@
+{
+  "name": "NgRx Issue",
+  "short_name": "NgRx Issue",
+  "theme_color": "#4d9f4e",
+  "background_color": "#fff",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./"
+}
