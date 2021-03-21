@@ -34,18 +34,3 @@ browser_repositories(
     chromium = True,
     firefox = True,
 )
-
-load(
-    "@io_bazel_rules_docker//repositories:repositories.bzl",
-    container_repositories = "repositories",
-)
-
-container_repositories()
-
-load("@io_bazel_rules_docker//repositories:deps.bzl", container_deps = "deps")
-
-container_deps()
-
-load("@io_bazel_rules_docker//nodejs:image.bzl", nodejs_image_repos = "repositories")
-
-nodejs_image_repos()

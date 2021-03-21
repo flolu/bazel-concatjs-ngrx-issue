@@ -61,9 +61,9 @@
   },
   "scripts": {
     "start": "ibazel run //services/client:dev_server",
-    "prod": "bazelisk run //services/client:pwa_server",
+    "prod": "bazelisk run //services/client:app_server",
     "upgrade-ngrx": "yarn add @ngrx/store -D @ngrx/store-devtools",
-    "postinstall": "patch-package --patch-dir dev/patches && ngcc"
+    "postinstall": "patch-package && ngcc"
   },
   "prettier": {
     "printWidth": 100,

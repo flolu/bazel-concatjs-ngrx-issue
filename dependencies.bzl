@@ -40,19 +40,3 @@ def dependencies():
         sha256 = "9bb461d5ef08e850025480bab185fd269242d4e533bca75bfb748001ceb343c3",
         urls = ["https://github.com/bazelbuild/rules_webtesting/releases/download/0.3.3/rules_webtesting.tar.gz"],
     )
-
-    # https://github.com/bazelbuild/rules_docker/releases
-    http_archive(
-        name = "io_bazel_rules_docker",
-        sha256 = "95d39fd84ff4474babaf190450ee034d958202043e366b9fc38f438c9e6c3334",
-        strip_prefix = "rules_docker-0.16.0",
-        urls = ["https://github.com/bazelbuild/rules_docker/releases/download/v0.16.0/rules_docker-v0.16.0.tar.gz"],
-    )
-
-    # https://github.com/bazelbuild/rules_k8s/releases
-    http_archive(
-        name = "io_bazel_rules_k8s",
-        sha256 = "51f0977294699cd547e139ceff2396c32588575588678d2054da167691a227ef",
-        strip_prefix = "rules_k8s-0.6",
-        urls = ["https://github.com/bazelbuild/rules_k8s/archive/v0.6.tar.gz"],
-    )
