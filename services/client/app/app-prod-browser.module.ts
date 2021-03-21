@@ -1,7 +1,6 @@
 import {isPlatformBrowser} from '@angular/common'
 import {Inject, NgModule, PLATFORM_ID} from '@angular/core'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
-import {ServiceWorkerModule} from '@angular/service-worker'
 
 import {RootStoreModule} from '@client/store'
 
@@ -13,12 +12,7 @@ import {AppComponent} from './app.component'
  * https://stackoverflow.com/a/44402938/8586803
  */
 @NgModule({
-  imports: [
-    AppBaseModule,
-    ServiceWorkerModule.register('ngsw-worker.js'),
-    RootStoreModule,
-    BrowserAnimationsModule,
-  ],
+  imports: [AppBaseModule, RootStoreModule, BrowserAnimationsModule],
   bootstrap: [AppComponent],
 })
 export class AppProdBrowserModule {

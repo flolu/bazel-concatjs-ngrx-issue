@@ -23,7 +23,6 @@ ng_ts_library(
         "@npm//@angular/core",
         "@npm//@angular/platform-browser",
         "@npm//@angular/router",
-        "@npm//@angular/service-worker",
         "@npm//@ngrx/store",
         "@npm//rxjs",
     ],
@@ -38,7 +37,6 @@ ng_ts_library(
         "//services/client/store",
         "@npm//@angular/core",
         "@npm//@angular/platform-browser",
-        "@npm//@angular/service-worker",
         "@npm//@ngrx/store-devtools",
     ],
 )
@@ -53,7 +51,6 @@ ng_ts_library(
         "@npm//@angular/common",
         "@npm//@angular/core",
         "@npm//@angular/platform-browser",
-        "@npm//@angular/service-worker",
         "@npm//rxjs",
     ],
 )
@@ -67,7 +64,6 @@ ng_ts_library(
         "//services/client/store",
         "@npm//@angular/common",
         "@npm//@angular/core",
-        "@npm//@angular/service-worker",
         "@npm//rxjs",
     ],
 )
