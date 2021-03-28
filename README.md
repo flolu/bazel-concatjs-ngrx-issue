@@ -1,3 +1,12 @@
+### Issue was fixed via workaround
+
+Read more here:
+
+- https://stackoverflow.com/a/66837422/8586803
+- https://github.com/bazelbuild/rules_nodejs/issues/2320#issuecomment-808823505
+
+Thank you, [mattem](https://github.com/mattem)
+
 ### Basic Usage
 
 - `yarn install` (Install dependencies)
