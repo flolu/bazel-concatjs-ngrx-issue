@@ -7,7 +7,7 @@
     "@angular/platform-browser": "^11.2.4",
     "@angular/platform-browser-dynamic": "^11.2.4",
     "@angular/router": "^11.2.4",
-    "@ngrx/store": "9.1.2",
+    "@ngrx/store": "^11.0.1",
     "core-js": "2.6.9",
     "rxjs": "^6.6.3",
     "systemjs": "6.1.2",
@@ -29,7 +29,7 @@
     "@bazel/rollup": "^3.2.0",
     "@bazel/terser": "^3.2.0",
     "@bazel/typescript": "^3.2.0",
-    "@ngrx/store-devtools": "9.1.2",
+    "@ngrx/store-devtools": "^11.0.1",
     "@types/jasmine": "^3.6.2",
     "@types/node": "^14.11.2",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
@@ -53,6 +53,7 @@
     "rollup": "^2.28.2",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "shelljs": "^0.8.4",
     "terser": "^5.3.4",
     "typescript": "^4.2.3"
   },
@@ -60,7 +61,8 @@
     "start": "ibazel run //services/client:dev_server",
     "prod": "bazelisk run //services/client:app_server",
     "upgrade-ngrx": "yarn add @ngrx/store -D @ngrx/store-devtools",
-    "postinstall": "patch-package && ngcc"
+    "patch-ngrx": "node patch-ngrx.js",
+    "postinstall": "yarn patch-ngrx && patch-package && ngcc"
   },
   "prettier": {
     "printWidth": 100,

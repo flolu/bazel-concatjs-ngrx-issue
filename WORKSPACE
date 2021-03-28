@@ -15,6 +15,9 @@ load("@build_bazel_rules_nodejs//:index.bzl", "yarn_install")
 
 yarn_install(
     name = "npm",
+    data = [
+        "//:patch-ngrx.js",
+    ],
     package_json = "//:package.json",
     quiet = False,
     yarn_lock = "//:yarn.lock",
